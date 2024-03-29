@@ -8,6 +8,7 @@ namespace Assignment03.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
+
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 

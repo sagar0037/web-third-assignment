@@ -1,3 +1,5 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Assignment03.Data;
 
 namespace Assignment03
 {
@@ -6,6 +8,8 @@ namespace Assignment03
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddDbContext<Assignment03Context>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("Assignment03Context")));
 
             // Add services to the container.
 
