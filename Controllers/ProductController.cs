@@ -40,7 +40,7 @@ namespace Assignment03.Controllers
             return product;
         }
 
-        // POST: Product/PostCart
+        // POST: Product/PostProduct
         [HttpPost]
         public async Task<ActionResult<Product>> PostProduct(Product product)
         {
@@ -103,9 +103,6 @@ namespace Assignment03.Controllers
         {
             return _context.Product.Any(e => e.ProductId == id);
         }
-
-
-
 
 
     }
